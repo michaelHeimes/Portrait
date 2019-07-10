@@ -1,0 +1,334 @@
+.page-template-individual-solution {
+	
+	h2 {
+		margin-top: 0.5em;
+	}
+	
+	main {
+		padding-top: 5.1em;
+		
+		ul.partner-logos {
+			list-style: none;
+			padding-bottom: 4.8em;
+			justify-content: center;
+			
+				@include breakpoint (medium) {
+					justify-content: space-between;
+				}
+			
+			li {
+				text-align: center;
+				min-width: 50%;
+				margin-bottom: 1.5em;
+				
+				@media screen and (min-width: 450px) {
+					min-width: 33%;
+				}
+				
+				@media screen and (min-width: 600px) {
+					min-width: 25%;
+				}
+				
+				@include breakpoint (medium) {
+					min-width: 20%;
+				}
+				
+				@include breakpoint (large) {
+					min-width: 0;
+				}
+				
+			}
+		}
+		
+		.individual-solution-intro {
+			position: relative;
+			padding-bottom: 2.25em;
+		
+			h2 {
+				margin-top: 0.5em;
+			}
+		
+			.small-wrap.text-center {
+				position: relative;
+				z-index: 1;
+			}
+		
+			li {
+				display: block;
+				flex-wrap: wrap;
+				min-width: 100%;
+				max-width: 100%;
+				
+			@include breakpoint (medium) {
+				min-width: 45%;
+				max-width: 45%;
+			}
+			
+			}
+			
+			ul.fancy-bullets.fancy-arrow-bullets {
+				padding-left: 4em;
+			
+				li {
+					padding-right: 3em;
+				
+				&:before {
+			    	left: -35px;
+			    }
+			    }
+    		}
+			
+		@include breakpoint (large) {
+			ul {
+				max-width: 860px !important;
+				justify-content: space-between;
+				margin: 0 auto;
+			}
+			
+		}
+			
+		}
+		
+		#solution-why-us {
+			.solution-why-us-title-wrap {
+				overflow: hidden;
+				position: relative;
+				padding-top: 10.7em;
+    			padding-bottom: 9.7em;
+    			
+    			.pwutw-mask {
+	    			position: absolute;
+	    			top: 0;
+	    			left: 0;
+	    			right: 0;
+	    			bottom: 0;
+	    			background-color: rgba(0,0,0,0.5);
+    			}
+    			
+    			.pwutw-wedge {
+					position: absolute;
+				    top: -40px;
+				    right: -2%;
+				    height: 60px;
+				    width: 110%;
+				    background: #0097f4;
+				    transform: rotate(1.5deg);
+	    			
+    			}
+    			
+    			h2 {
+	    			position: relative;
+					color: #fff;
+				}
+    			
+			}
+			
+			.pwu-card-wrap {
+				position: relative;
+				margin-top: -2.8em;
+				max-width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+				flex-direction: column;
+				
+			@include breakpoint(medium){
+				max-width: 938px;
+				flex-direction: row;
+			}
+				
+				.pwu-spacer {
+					display: none;
+				    position: absolute;
+				    width: 24px;
+				    height: 230px;
+				    background: #fff;
+				    left: -12px;
+				    right: 0;
+				    bottom: 0;
+				    margin: auto;
+				    
+				@include breakpoint(medium){
+					display: block;
+				}
+
+				    img {
+					    position: absolute;
+					    left: 7px;
+					    min-width: 9px;
+				    }
+				&:before {
+				    content: "";
+				    position: absolute;
+				    z-index: 0;
+				    height: 6px;
+				    bottom: 0;
+				    left: 0;
+				    right: 0;
+				    margin: auto;
+					box-shadow: 0 11px 12px 0 rgba(0,0,0,0.10);				}
+
+				}
+				
+				.pwu-card {
+					background: #FFFFFF;
+					border-top: 3px solid $sky-blue;
+					padding: 5.5em 8% 2.7em;
+					margin-bottom: 2em;
+					box-shadow: 0 11px 12px 0 rgba(0,0,0,0.10);
+					.pwu-card-title-icon-wrap {
+					
+						h3 {
+							display: inline-block;
+							margin-bottom: 0;
+							padding-bottom: 0;
+						}
+						
+						img {
+							padding: 0;
+							min-width: 62px;
+							max-width: 62px;
+						}
+					
+					}
+					
+					ul {
+						padding-top: 2.55em;
+						margin-left: 1em;
+						
+						li {
+							display: block;
+							width: 100%;
+						}
+					}
+				@include breakpoint(medium){
+					margin-left: 0.2em;
+					margin-right: 0.2em;
+					margin-bottom: 0;
+				}
+					
+				}
+				
+			}
+			
+		}
+		
+		#ingredient-brands {
+				padding-top: 3.9em;
+				
+				> div > h3 {
+					margin-top: 0.5em;	
+					margin-bottom: 0;
+				}
+				
+				> div > h2 {
+					margin-top: 0.1em;
+					padding-bottom: 2em;
+				}
+			
+			nav#values-wrap {
+				button {
+					min-width: 230px;
+					text-align: left !important;
+					margin-left: 1.4em;
+					margin-right: 1.4em;
+	
+				
+					img {
+						    padding-bottom: 2.7em;
+					}
+					
+					p {
+						font-size: 16px;
+						color: $text-black;
+						text-align: center;
+						line-height: 24px;	
+					}
+				}
+			}
+			
+
+		}
+		
+		#how-it-works {
+		
+			#steps {
+				padding-top: 1.35em;
+				
+				.single-step {
+					padding-top: 2.25em;
+					padding-bottom: 2.25em;
+					
+					h3 {
+						padding-top: 0.64em;
+						padding-bottom: 0.2em;
+					}
+					
+					p{
+						max-width: 98%;
+					}
+				}
+			}
+			
+			#how-it-works-content-wrap {
+				
+				.image-content-row {
+				
+					&.row-bg-gray {
+						background-color: $gray;
+					}
+					
+					&.row-bg-white {
+						background-color: $gray;
+					}
+					
+				}
+		
+			}
+			
+			#how-it-works-button-wrap{
+				position: relative;
+				bottom: -2em;
+				a:first-child {
+		    	margin-right: 1em;
+		    	}
+			}
+	
+		}
+		
+		section#solution-contact-form {
+			#top-wrap {
+				max-width: 510px;
+				margin: auto;
+				
+				h2 {
+					margin-bottom: 0.5em;
+				}
+				
+				h4 {
+					margin-bottom: 0;
+				}
+			}
+			
+			form {
+				margin-top: 0;
+				padding-top: 2em;
+				
+				._html-code {
+					text-align: center;
+				}	
+				
+				._button-wrapper._full_width {
+					text-align: center;
+				}
+				
+				small {
+					font-size: 10px;
+					line-height: 15px;
+				}
+				
+			}
+		}
+					
+	}
+	
+}

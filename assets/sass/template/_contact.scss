@@ -1,0 +1,69 @@
+.page-template-contact {
+	
+	#main {
+		@include breakpoint(large) {
+			display: flex;
+		}
+				
+		a#back-to-previous-link {
+			margin-top: 1.9em;
+			margin-left: 50px;
+			padding: 0.634em 0em;
+			display: block;
+			font-family: $raleway;
+			transition: $transition;
+			
+			span#back-to-previous-text {
+				display: inline-block;
+				padding-left: 0.8em;
+			}
+			
+			img {
+				transition: $transition;
+			}
+			
+		&:hover {
+			img {
+				transform: translateX(-10px);
+			}
+		}
+			
+		}	
+		
+		h1 {
+			padding-top: 1.55em;
+			margin-bottom: 0.2em;
+		}
+		
+		form,
+		#_form_23_ {
+			padding-top: 1.8em
+		}
+		
+		._form-title {
+		display: none !important;
+		}
+		
+		.google-map {
+			min-height: 100vh;
+			width: 100%;
+			
+		@include breakpoint(large) {
+				min-height: 0;
+				width:auto;
+			}
+		}
+			
+		.wpgmza_map {
+		    min-width: 100vw;
+		    min-height: 100vh;
+		
+		@include breakpoint(large) {
+			min-width: 0;
+		    min-height: 0;			
+			}
+		}
+		
+	}
+		
+}

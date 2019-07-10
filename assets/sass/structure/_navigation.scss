@@ -1,0 +1,561 @@
+//--------------------------------------------------------------
+// Navigation
+//--------------------------------------------------------------
+// Temporary Fix
+ #masthead .wrap .site-nav-wrap .site-navigation ul.primary-menu ul.sub-menu li.hide-in-header-nav {
+	display: none;
+}
+// Default menu (active after a fresh WordPress install)
+.menu {
+	@include list-reset;
+        
+    @include breakpoint(large) {
+        display: flex;
+    }
+    
+    li {
+        
+    }
+
+} // .menu
+
+
+.js-superfish {
+    
+    .menu-item > a:focus ~ ul.sub-menu,
+    .menu-item.focus > ul.sub-menu,
+    .menu-item:hover > ul.sub-menu {
+        opacity: 1;
+        transform: translateY(0);
+        transition: none;
+    }
+    
+    
+    .menu-item:focus {
+        position: static;
+    }
+    
+    .menu-item > a:focus + ul.sub-menu,
+    .menu-item.sfHover > ul.sub-menu {
+        opacity: 1;
+    }   
+}
+
+
+.no-touchevents a[href^="tel:"]:not(.button) {
+    color: $dark-gray;
+	pointer-events: none;    /* prevents click event */
+    cursor: text;            /* use text highlight cursor*/
+}
+
+// Navigation on Comment, Post and Posts
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0;
+		//overflow: hidden;
+	} // .site-main &
+
+	&.nav-previous {
+		float: left;
+	} // &.nav-previous
+
+	&.nav-next {
+		float: right;
+		text-align: right;
+	} // &.nav-next
+} // .comment-navigation, .posts-navigation, .post-navigation
+
+
+button {
+    cursor: pointer;   
+}
+
+
+// Primary Navigation
+#masthead {
+	.wrap {
+		
+		.logo-wrap {	
+		@include breakpoint (large) {
+			background-color: transparent;
+			min-height: 0;
+			max-height: none;
+		}		
+		
+			.header-logo {
+				width: 100%;
+				max-width: 266px;
+			}
+		
+		}
+		
+		
+		.site-nav-wrap {
+		@include breakpoint (large) {
+			overflow: visible;
+			background-color: transparent;
+// 			padding: 0 map_get($grid-column-gutter, medium) / 2;
+		}
+			
+			.site-navigation {
+				text-align: right;
+				font-size: 1.063rem;
+				color: #fff;
+				
+				a {
+					color: #fff;
+			    
+				}
+				
+				.upper-nav {
+					text-align: right;
+					display: flex;
+					flex-wrap: nowrap;
+					overflow: hidden;
+					justify-content: flex-end;
+					margin-bottom: 14px;
+	// 				margin-right: -1.15em;
+					
+				@include breakpoint (large) {
+					width: auto;
+					margin-left: 0;
+				}
+					
+					a {
+						font-size: 1.063rem;
+						font-family: $open-sans;
+						color: #fff;
+						padding: 7px 19px;
+						
+					@include breakpoint (large) {
+						transform: skew(0);
+						min-width: 0;
+					    position: relative;
+						z-index: 1;
+						margin-right: 41px;
+						background-color: transparent;
+						
+					&.contact-modal-button, &.upper-nav-store-link {
+						background-color: transparent;
+					}
+				        
+				        span.upper-nav-skew-correct {
+					        transform: skew(0deg);
+					        
+					        img {
+						        margin-right: 9px;
+					        }
+					        
+							span.upper-link-text {
+								position: relative;
+								
+							&:after {
+								content: "";
+								position: absolute;
+								left: 0;
+								bottom: -4px;
+								width: 27px;
+								height: 2px;
+								background-color: $dark-blue;
+							
+							}
+
+							}					    
+					        
+				        }		
+						
+					}	
+			    		
+
+					
+					&.upper-nav-store-link {
+						padding-right: map_get($grid-column-gutter, medium) / 2;
+						position: relative;
+					}
+						
+/*
+						span.upper-nav-skew-correct {
+							display: inline-block;
+							
+							span.upper-link-text {
+								position: relative;
+								
+							&:after {
+								display: none;
+								content: "";
+								position: absolute;
+								left: 0;
+								bottom: -4px;
+								width: 27px;
+								height: 2px;
+								background-color: $dark-blue;
+								
+							@include breakpoint (large) {
+								display: block;
+							}
+							
+							}
+							
+							
+								
+							}
+							
+							> img {
+								margin-top: -2px;
+								margin-right: 11px;
+							}
+							
+						}
+*/
+						
+						&#contact-modal-button {
+							
+	
+						}
+						
+						&.upper-nav-store-link {
+							
+	
+						}
+						
+						&:hover {
+							
+							span.upper-nav-skew-correct {
+								
+								span.upper-link-text:after {
+									width: 100%;
+								}
+		
+							}
+						}
+					}
+				}
+				
+				ul.primary-menu {
+					justify-content: flex-end;
+					list-style: none;
+				    padding: 0;
+				    margin: 0;
+				    
+	/*
+				    button {
+					    display: none;
+				    }
+	*/
+				    
+				    li {
+					    font-size: 1.063rem;
+						font-family: $open-sans;
+						margin: 0 1.05em;
+					    
+					    &:last-child {
+						    margin-right: 0;
+						    
+						    a {
+								padding-right: 0; 
+								   
+						    }
+						        
+					    }
+				    
+				    	&.menu-item-has-children {
+							position: relative;
+				    
+						    &:hover {
+							 	>  ul.sub-menu {
+								 	left: 0;
+								 	top: 25px;
+								 	opacity: 1;
+								 	z-index: 1;
+							 	}
+							}
+							 	
+				    	}
+				    	
+				 	    a {
+						    padding: 4px;
+						    position: relative;
+						    
+						    	&:after {
+								    content: "";
+								    height: 2px;
+								    background-color: $dark-blue;
+								    position: absolute;
+								    bottom: 0;
+								    left: 50%;
+								    right: 50%;
+							    }
+							    
+							&:hover:after{
+								left: 0;
+								right: 0;
+							}
+					    }
+					    
+					    &.menu-item-has-children {
+						    a:after {
+							    display: none;
+						    }
+					    }
+				    
+				    }
+				    
+				    ul.sub-menu {
+					    display: none;
+					    min-width: 190px;
+						letter-spacing: 0;
+						text-align: left;
+						line-height: 31px;
+					    margin: 0;
+					    padding: 0;
+					    top: 0;
+					    list-style: none;
+					    z-index: 0;
+					    
+					    transition: opacity 0.15s ease 0.01s;
+					    
+					@include breakpoint (large) {
+						display: block;
+					    left: -99999em;
+					    position: absolute;		
+					   	opacity: 0;
+					    background: #fff;
+					 	border-top: 6px solid $sky-blue;
+						box-shadow: 0 11px 12px 0 rgba(0,0,0,0.10);
+						}
+					    
+					    li {
+						    margin: 0; 
+					    
+						    a {	
+							    font-size: 0.9375rem;
+							    text-align: left;
+							    width: 100%;
+							    display: inline-block;
+							    color: #fff;
+								padding: 8px 17px;
+								transition: $transition;
+								
+							@include breakpoint (large) {
+								color: $dark-gray;
+							}
+	
+						    }
+	
+					    }
+				    }
+				}
+				
+			}
+			
+		}
+	}
+        
+                        
+    &.fixed {
+        .wrap .site-nav-desktop.site-nav-wrap {
+		        
+		        .site-navigation {
+				        ul li a {
+					        color: #fff;
+				        
+				        @include breakpoint (large) {
+					        color: $dark-gray;
+				        }
+				        
+				        }
+				        
+			        .upper-nav {
+				        
+				        	a.contact-modal-button {
+							margin-right: -30px;
+						}
+				        
+						a {
+							margin-right: 16px;
+							padding-right: 18px;
+							transform: skew(-20deg);
+							
+						&.contact-modal-button {
+							position: relative;
+							z-index: 3;
+						}
+							
+						&.upper-nav-store-link {
+							border-left: 30px solid $sky-blue;
+						}
+						
+							span.upper-nav-skew-correct {
+								transform: skew(20deg);
+							}
+							
+						}
+						
+						
+								
+				        
+				        span.upper-link-text {
+							
+							&:after {
+								display: none;
+							}
+							
+						}
+		        
+						.contact-modal-button {
+							background-color: $dark-blue;
+						}
+						
+						.upper-nav-store-link {
+							background-color: $sky-blue;					
+						}
+					
+					}
+				
+				}
+			
+		}
+    }    
+}
+
+// Primary Navigation Pseudo Transitions
+.no-touchevents #masthead {
+	.site-nav-wrap {
+		.site-navigation {
+			.upper-nav {
+				a {
+
+					&:hover {
+						
+						span.upper-nav-skew-correct {
+							
+							span.upper-link-text:after {
+								width: 100%;
+								transition: $transition;
+							}
+	
+						}
+					}
+				}
+			}
+			
+			ul.primary-menu {			    
+			    
+			    li {
+			    
+			    	&.menu-item-has-children {
+			    
+					    &:hover {
+						 	>  ul.sub-menu {
+							 	left: 0;
+							 	top: 32px;
+							 	opacity: 1;
+							 	z-index: 1;
+							 	white-space: nowrap;
+						 	}
+						}
+						 	
+			    	}
+			    	
+			 	    a {
+				 	    	&:after {
+				 	    		transition: $transition;
+						}    
+						    
+						&:hover:after{
+							left: 0;
+							right: 0;
+						}
+				    }
+				    
+			    
+			    }
+			    
+			    ul.sub-menu {
+				    li {
+					    a {
+							
+							&:hover {
+								background-color: $light-gray;
+							}
+
+					    }
+				    }
+			    }
+			}
+		}
+	}
+}
+
+.error404 {
+	#masthead .wrap .site-nav-wrap .site-navigation a, 
+	#masthead .wrap .site-nav-wrap .site-navigation .upper-nav a {
+		
+		@include breakpoint (large) {
+			color: $dark-gray;
+		}
+	}
+}
+
+// Footer Navigation
+#site-footer {
+	ul.primary-menu {
+		
+		padding-bottom: 2em;
+		
+		> li {
+			min-width: 100%;
+			
+		@include breakpoint (smedium) {
+			min-width: 0;
+		}
+			
+		}
+		
+		li {
+			
+			margin-bottom: 1em;
+			
+			a {
+				font-size: 0.875rem;
+				color: $light-gray-text;
+				letter-spacing: 0.5px;
+				text-align: left;
+				line-height: 20px;
+				font-family: $open-sans;
+				text-transform: uppercase;
+			}
+			
+			ul.sub-menu {
+				padding-top: 0.9em;
+				list-style: none;
+				margin: 0 auto 2em;
+				li {
+					padding: 0;
+					a {
+						text-transform: none;
+						font-size: 14px;
+						color: $text-black;
+						letter-spacing: 0;
+						text-align: left;
+						line-height: 31px;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+

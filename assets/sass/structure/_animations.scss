@@ -1,0 +1,57 @@
+// Pixel Grids
+
+.pixel-grid,
+.product-pixel-grid {
+	span {
+		opacity: 0;
+	}	
+}
+
+.fadeInUp {
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all .3s ease-out;
+}
+
+.fadeInRight {
+	transform: translateX(50px);
+	opacity: 0;
+	transition: all .3s ease-out;
+}
+
+.page-template-company .has-corner-bg {
+	opacity: 0;
+}
+
+.page-template-company .has-corner-bg>div .image-corner-bg.sky-blue-corner-bg, .page-template-company .has-corner-bg>div .image-corner-bg.dark-blue-corner-bg {
+    transform: translateX(-0) translateY(0);
+}
+
+.pixel-set span, .pixel-set span {
+	opacity: 0;
+}
+
+.lc-img-wrap {
+	overflow: hidden;
+	
+	> img {
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+	}
+	
+}
+
+
+/*
+body.page-template-multipurpose .image-content-row.row-bg-gray span.ic-row-img span.color-bg-block {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body.page-template-multipurpose .image-content-row.row-bg-gray span.ic-row-img {
+	opacity: 0;
+}
+*/

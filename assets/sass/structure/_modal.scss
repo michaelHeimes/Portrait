@@ -1,0 +1,80 @@
+// Modals
+
+.reveal:focus{
+    outline: none;
+}
+
+.reveal-overlay {
+    background-color: rgba(51,51,51,.7);
+}
+
+.reveal {
+    background: transparent;  
+    border: none;
+    
+}
+
+#contact-modal {
+	overflow: visible;
+	
+	.cm-close-button {
+	    position: absolute;
+	    right: 0px;
+	    top: 4px;
+	    right: 4px;
+	    background: #979797;
+		padding: 8px;
+		border-radius: 100%;
+		
+	@media screen and (min-width: 640px) {
+	    top: -32px;
+	    right: 0;
+		background: transparent;
+		padding: 0;
+		border-radius: 0;
+	}
+		
+
+	}
+	
+	#contact-modal-header {
+		position: relative;
+		padding: 31px 24px 20px;
+		background-color: #fcfbfb;
+		border-radius: 3px 3px 0px 0px;
+		border-bottom: 8px solid $sky-blue;
+		
+	@include breakpoint (medium) {
+		padding: 31px 50px 20px;
+	}
+	
+	}
+	
+	#_form_23_ {
+		padding: 31px 16px 20px;
+		max-width: none;
+		border-radius: 0px 0px 3px 3px;
+		margin-top: 0;
+		background-color: #fcfbfb !important;
+		border-radius: 2px !important;
+		
+	@include breakpoint (medium) {
+		padding: 50px;
+	}
+			
+		._form_element select,
+		._form_element input {
+			background-color: #fcfbfb;
+		}
+		
+		textarea {
+			padding-top: 0.7em;
+			background-color: #fff;
+			border: 0;
+			border: 1px solid #d7d5d5;
+			border-radius: 2px;
+		}
+		
+	}
+
+}

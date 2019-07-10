@@ -1,0 +1,179 @@
+.page-template-multipurpose,
+.page-template-individual-solution {
+	
+	section {
+		
+		&.row-bg-gray {
+			background-color: $light-gray;
+		}
+		
+		&.row-bg-white {
+			background-color: white;
+		}
+		
+	}
+	
+	section.two-third-copy {
+		padding-top: 5.6em;
+		padding-bottom: 5.1em;
+		
+	&:first-child {
+		padding-top: 0;
+	}	
+		
+		.two-third-copy-wrap {
+	
+			@include breakpoint (medium) {
+				max-width: 770px;
+			}
+			
+		}
+		
+	}
+	
+	.image-content-row {
+		
+		padding-top: 5.2em;
+		padding-bottom: 5.6em;
+		
+		> .row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.ic-row-img-wrap {
+			position: relative;
+			height: 100%;
+			margin-bottom: 4em;
+			
+		@include breakpoint (large) {
+			margin-bottom: 0;
+		}
+					
+			.ic-row-img {
+				
+				span.color-bg-block {
+					display: inline-block;
+					position: absolute;
+					z-index: 0;
+				}
+			
+				> img {
+					border-radius: 1px;
+					position: relative;
+					z-index: 1;
+					display: block;
+					box-shadow: 0 11px 12px 0 rgba(0,0,0,0.10);
+				}
+			
+			}
+		
+		}
+		
+		&.row-img-align-left > .row {
+			flex-direction: row;
+		}
+
+		&.row-img-align-right > .row {
+			flex-direction: row-reverse;
+		}
+		
+		&.row-bg-gray {
+			
+			span.ic-row-img {
+				display: inline-block;
+				position: relative;
+			
+			span.color-bg-block {
+				background-color: $sky-blue;
+				width: 85%;
+				top: -33px;
+				bottom: -37px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			
+				> img {
+					position: relative;
+					z-index: 1;
+				}
+			
+			}
+			
+		}
+		
+		&.row-bg-white {
+			
+			
+			span.ic-row-img {
+				display: inline-block;
+				position: relative;
+			
+			span.color-bg-block {
+				background-color: $light-gray;
+				width: 89%;
+				top: 34px;
+				left: -47px;
+				right: auto;
+				bottom: 35px;
+			}
+
+			
+			}
+			
+		&.row-img-align-right {
+			.ic-copy-wrap {
+				padding-right: 3em;
+			}
+		}
+		
+		&.row-img-align-left {
+			span.ic-row-img {
+
+			span.color-bg-block {
+				background-color: $light-gray;
+				width: 89%;
+				top: 34px;
+				left: auto;
+				right: -27px;
+				bottom: 35px;
+				
+			@media screen and (min-width: 1200px) {
+				width: 100%;
+			}
+				
+			}
+			
+			}
+		}
+		
+		}
+		
+		
+	}
+	
+	
+	section.flex-centered-half-width-copy {
+		padding-top: 5.3em;
+		padding-bottom: 5.1em;
+		
+		h2 {
+			padding-bottom: 0.57em;
+		}
+		
+		a.button {
+			margin-top: 2.3em;
+		}
+		
+	}
+	
+	section.flex-full-width-copy {
+		padding-top: 5.4em;
+		padding-bottom: 5.1em;	
+	}
+	
+	
+	
+}

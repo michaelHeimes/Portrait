@@ -1,0 +1,73 @@
+/*!
+Theme Name: Portrait Displays
+Author: Sayenko Design
+Author URI: http://sayenkodesign.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _s
+Tags: Foundation, sass, gulp
+
+_s is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+
+*/
+
+// Settings (allows us to override Foundation global settings)
+@import "settings/settings"; 
+
+// Foundation Sites
+@import 'foundation/index';
+
+// Utilities
+@import "utilities/index";
+
+// Base
+@import "base/index";
+
+// Motion UI
+@import "motion-ui";
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Components
+@import "components/index";
+
+// Structure
+@import "structure/index";
+@import "structure/header";
+@import "structure/mobile-navigation";
+@import "structure/navigation";
+@import "structure/typography";
+@import "structure/buttons";
+@import "structure/footer-cta";
+@import "structure/footer";
+@import "structure/active-campaign-forms";
+@import "structure/contact-form";
+@import "structure/modal";
+@import "structure/animations";
+@import "structure/addtoany";
+
+
+// Plugins (Gravity forms, Royal Slider etc...)
+@import "plugins/index";
+
+// Sections
+@import "sections/index";
+@import "sections/hero";
+
+// Template
+@import	"template/index";
+@import	"template/global";
+@import	"template/blog";
+@import	"template/post";
+@import	"template/home";
+@import	"template/company";
+@import	"template/leadership";
+@import	"template/industry-partners";
+@import	"template/individual-solution";
+@import	"template/individual-industry";
+@import	"template/individual-product";
+@import	"template/multipurpose";
+@import	"template/contact";
+@import	"template/downloads";
+@import	"template/404";

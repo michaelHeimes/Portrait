@@ -1,0 +1,380 @@
+.page-template-individual-industry {
+	
+	#page-top {
+		z-index: 2;
+		margin-bottom: -220px;
+	}
+	
+	h2 {
+		margin-top: 0.5em;
+	}
+	
+	#top-wedge {
+		z-index: 1;
+	    position: relative;
+	    margin-bottom: -200px;
+	    left: -10%;
+	    right: 0;
+	    width: 120%;
+	    height: 250px;
+	    background-color: #fff;
+	    transform: rotate(10deg);
+	    
+	@include breakpoint (medium) {
+	    margin-bottom: -250px;
+	}
+	    
+	}
+	
+	main {
+		padding-top: 5.1em;
+		
+		section {
+			
+			.ic-copy-wrap {
+				position: relative;
+			}
+			
+		&.industry-heading {
+			padding-top: 140px;
+			background-color: $gray;
+			position: relative;
+    		z-index: 0;
+		}
+		
+		&.row-bg-gray {
+			background-color: $gray;
+			
+		&.top-wedge {
+			padding-top: 0;
+		}
+			
+		&.bottom-wedge {
+			position: relative;
+		    padding-bottom: 300px;
+		    margin-bottom: -250px;			
+		&:after {
+			position: absolute;
+		    bottom: -50px;
+		    left: -30%;
+		    right: 0;
+		    width: 160%;
+		    height: 209px;
+		    background-color: #fff;
+		    transform: rotate(10deg);
+		}
+		
+		}	
+			
+		}
+		
+		&.row-bg-white {
+			background-color: white;
+			
+			.ic-copy-wrap {
+				background-color: #fff;
+				position: relative;
+			&:before {
+				content: '';
+			    z-index: 0;
+			    position: absolute;
+			    height: 100%;
+			    background: #fff;
+			}
+			
+				h2,
+				p {
+					position: relative;
+				} 
+				
+			}
+		}		
+		
+		}
+	
+		.image-content-row {
+			
+			padding-top: 5.2em;
+			padding-bottom: 0;
+			
+			> .row {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.ic-row-img-wrap {
+				position: relative;
+				height: 100%;
+				margin-bottom: 4em;
+				
+			@include breakpoint (large) {
+				margin-bottom: 0;
+			}
+						
+				.ic-row-img {
+					display: inline-block;
+					 position: relative;
+					span.color-bg-block {
+						display: inline-block;
+						position: absolute;
+						z-index: 0;
+					}
+				
+					> img {
+						border-radius: 1px;
+						position: relative;
+						z-index: 1;
+						display: block;
+						box-shadow: 0 11px 12px 0 rgba(0,0,0,0.10);
+					}
+				
+				}
+			
+			}
+			
+			&.img-style-blue-top-bottom {
+				span.color-bg-block {
+					background-color: $sky-blue;
+					width: 85%;
+					top: -33px;
+					bottom: -37px;
+					left: 0;
+					right: 0;
+					margin: auto;
+				}
+			
+			}
+			
+			&.img-style-white-side-bg {
+				span.color-bg-block {
+				    background-color: #fff;
+				    width: 100%;
+				    top: 34px;
+				    bottom: 35px;
+				}
+			}
+
+			&.img-style-white-corner-bg-grid {
+				span.color-bg-block {
+				    background-color: #fff;
+				    height: 200px;
+				    width: 200px;
+				    top: 0;
+				    box-shadow: 0 11px 12px 0 rgba(0,0,0,.2);
+				}
+			}
+			
+			&.img-style-blue-corners-grid {
+				span.ic-row-img {
+					opacity: 0;
+				}
+				
+				.image-corner-bg {
+					position: absolute;
+				    display: inline-block;
+				    width: 257px;
+				    height: 140px;
+				     
+				&.sky-blue-corner-bg {
+					top: 0;
+				    left: 0;
+				    transform: translateX(0) translateY(0);
+				    background-color: #0097f4;
+				}
+				    
+				&.dark-blue-corner-bg {
+				    right: 0;
+				    bottom: 0;
+				    transform: translateX(0) translateY(0);
+				    background-color: #0058d3;
+				}
+
+				}
+				
+				.pixel-grid {
+					bottom: 80px;
+				    z-index: 1;
+				}
+				
+			}
+			
+			&.row-img-align-left {
+				> .row {
+				flex-direction: row;
+				}
+				
+				.ic-copy-wrap {
+					
+				@include breakpoint (large) {
+					padding-left: 2em;
+				}
+					
+				}
+				
+			&.row-bg-white {			
+				.ic-copy-wrap {
+				&:before {
+					left: 0;
+					right: -50%;
+				}
+				
+				}
+			}
+				
+			&.img-style-white-side-bg {
+				span.color-bg-block {
+				    right: 0;
+				    left: 0;
+				}
+			}
+			
+			&.img-style-white-corner-bg-grid {
+				span.color-bg-block {
+				    left: 0;
+				}
+			}
+			
+			&.img-style-white-corner-bg-grid {
+				.pixel-grid {
+					bottom: 40px;
+				    left: -115px;
+				}
+			}
+			
+			&.img-style-blue-corners-grid {								
+				.pixel-grid {
+				    left: -93px;
+				}
+			}
+
+			}
+	
+			&.row-img-align-right {
+				> .row {
+				flex-direction: row-reverse;
+				}
+				
+				.ic-copy-wrap {
+					
+				@include breakpoint (large) {
+					padding-right: 2em;
+				}
+					
+				}
+				
+			&.row-bg-white {			
+				.ic-copy-wrap {
+				&:before {
+					right: 0;
+					left: -50%;
+				}
+				
+				}
+			}
+				
+			&.img-style-white-side-bg {
+				span.color-bg-block {
+				    right: 0;
+				}
+			}
+			
+			&.img-style-white-corner-bg-grid {
+				span.color-bg-block {
+				    right: 0;
+				}
+			}
+			
+			&.img-style-white-corner-bg-grid {
+				.pixel-grid {
+					bottom: 40px;
+				    right: -115px;
+				}
+			}
+				
+			}
+			
+			&.img-style-blue-corners-grid {								
+				.pixel-grid {
+				    left: -93px;
+				}
+			}
+				
+			
+		}
+		
+		section.recommended-products {
+			padding-top: 3.3em;
+			padding-bottom: 4.2em;
+			
+			h2 {
+				padding-bottom: 1.8em;
+			}
+			
+			.recommended-products-wrap {
+				.single-recommended-product {
+					margin-bottom: 2em;
+					
+					a {
+						color: $text-black;
+						display: flex;
+						align-items: flex-start;
+					&:hover {
+						color: $text-black;
+					}
+												
+					}
+					
+					img {
+						max-width: 86px;
+						margin-right: 1.1em;
+					}
+				}
+			}
+		}
+
+		section#partner-list {
+			
+			h2 {
+				padding-bottom: 1.66em
+			}
+		
+			ul.partner-logos {
+				list-style: none;
+				padding-bottom: 4.8em;
+				justify-content: center;
+				
+					@include breakpoint (medium) {
+						justify-content: space-between;
+					}
+				
+				li {
+					text-align: center;
+					min-width: 50%;
+					margin-bottom: 1.5em;
+					
+					@media screen and (min-width: 450px) {
+						min-width: 33%;
+					}
+					
+					@media screen and (min-width: 600px) {
+						min-width: 25%;
+					}
+					
+					@include breakpoint (medium) {
+						min-width: 20%;
+					}
+					
+					@include breakpoint (large) {
+						min-width: 0;
+					}
+					
+				}
+			}
+		
+		}
+		
+			
+	}
+	
+}

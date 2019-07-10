@@ -1,0 +1,41 @@
+// Add to Any
+
+.social-wrap {
+	margin-bottom: 3em;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	
+	p {
+		margin: 0 17px 0 0;
+		font-family: $raleway;
+		font-size: 1.125rem;
+		color: #454C54;
+		text-align: left;
+		line-height: 26px;
+	}
+	
+	a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: $sky-blue;
+		margin-right: 13px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		img {
+			max-width: 13px;
+			max-height: 12px;
+		}
+		
+	}
+}

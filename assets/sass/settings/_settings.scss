@@ -1,0 +1,135 @@
+//  Settings (includes overrides for sass/foundation/settings.scss)
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Off Canvas Menu
+
+
+@import '../../../node_modules/foundation-sites/scss/util/util';
+
+// 1. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: rem-calc(1215);
+$global-lineheight: 1.375;
+
+// Add custom HEX colors
+$text-black: #4A4A4A;
+$header-black: #0A0B09;
+$sky-blue: #0097F4;
+$dark-blue: #0058D3;
+$blue: #4298B5;
+$red: #BF0D3E;
+
+// Override default Foundation colors
+$light-gray: #EFF3F1;
+$gray: #ECECEC;
+$dark-gray: #252B33;
+
+
+$primary: $sky-blue;
+$secondary: $dark-blue;
+
+$border-color: transparent;
+
+$open-sans: 'Open Sans', sans-serif;
+$open-sans-pro: 'Open Sans Pro', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+
+$transition: all 0.25s ease;
+
+$body-background: #ffffff;
+$body-font-color: $text-black;
+$body-font-family: $open-sans;
+$light-gray-text: #979797;
+
+
+$global-margin: 24px;
+$global-padding: 10px;
+$global-weight-normal: normal;
+$global-weight-bold: 700;
+$global-radius: 0;
+$global-text-direction: ltr;
+
+
+// 2. Breakpoints
+// --------------
+
+$breakpoints: (
+  small: 0,
+  smedium: 640,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1024px,
+  xxlarge: 1200px,
+  xxxlarge: 1440px,
+  body-max: 1770px
+);
+// must match $breakpoints
+$breakpoint-classes: (small smedium medium large xlarge xxlarge xxxlarge body-max);
+
+
+// 3. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12; // usually 12
+$grid-column-gutter: (
+  small: 30px,
+  medium: 20px,
+  large: 20px
+);
+$grid-column-align-edge: true;
+$block-grid-max: 8;
+
+
+// 4. Base Typography
+// ---------
+
+$header-font-family: $raleway;
+$header-font-weight: 400;
+$header-font-style: normal;
+$header-line-height: 1.5;
+
+$header-color: $text-black;
+$small-font-size: 10px;
+
+$paragraph-font-family: $open-sans;
+$paragraph-font-style: normal;
+$paragraph-font-weight: normal;
+$paragraph-font-size: 16px;
+$paragraph-line-height: 1.5;
+$paragraph-font-color: $text-black;
+$paragraph-margin-bottom: 24px;
+
+$anchor-color: $primary;
+$anchor-color-hover: $secondary;
+
+/// Styles for headings at various screen sizes. Each key is a breakpoint, and each value is a map of heading styles.
+/// @type Map
+$header-styles: (
+  small: (
+    'h1': ('font-size': 43, 'line-height': $header-line-height, 'mt': 0, 'mb': 37),
+    'h2': ('font-size': 30, 'line-height': $header-line-height, 'mt': 0, 'mb': 25),
+    'h3': ('font-size': 22, 'line-height': $header-line-height, 'mt': 0, 'mb': 12),
+    'h4': ('font-size': 18, 'line-height': $header-line-height, 'mt': 0, 'mb': 20),
+    'h5': ('font-size': 17, 'line-height': $header-line-height, 'mt': 0, 'mb': 20),
+    'h6': ('font-size': 15, 'line-height': $header-line-height, 'mt': 0, 'mb': 20),
+  ),
+  large: (
+    'h1': ('font-size': 43 ),
+    'h2': ('font-size': 30 ),
+    'h3': ('font-size': 22 ),
+    'h4': ('font-size': 18 ),
+    'h5': ('font-size': 17 ),
+    'h6': ('font-size': 15 ),
+  ),
+) !default;
+
