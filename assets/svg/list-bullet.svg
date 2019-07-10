@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/arrow-gray</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-&gt;-Company---4-rows" transform="translate(-905.000000, -1967.000000)">
+            <g id="Group-4" transform="translate(906.000000, 1959.000000)">
+                <g id="Group-2-Copy-4" transform="translate(0.000000, 9.000000)">
+                    <g id="icon/arrow-gray" transform="translate(11.000000, 11.000000) rotate(-360.000000) translate(-11.000000, -11.000000) ">
+                        <g id="arrow-icon-3" stroke="#0097F4">
+                            <g id="arrow-icon-2" stroke-width="2">
+                                <g id="arrow-icon">
+                                    <circle id="Oval" cx="11" cy="11" r="11"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="right-arrow-copy" transform="translate(11.000000, 11.169231) rotate(-360.000000) translate(-11.000000, -11.169231) translate(6.430769, 7.446154)" fill="#0059D3">
+                            <path d="M8.70380633,3.48565721 L5.39619106,0.117729915 C5.27737467,-0.0235410377 5.06856481,-0.0400096244 4.92982251,0.0810012038 C4.79108021,0.201983089 4.7749064,0.414598622 4.89375122,0.555869575 C4.90483696,0.569038656 4.91688915,0.581339445 4.92982251,0.592598286 L7.67183765,3.38797447 L0.598977158,3.38797447 C0.416318274,3.38797447 0.268224159,3.53876768 0.268224159,3.72478456 C0.268224159,3.91080145 0.416318274,4.06156571 0.598977158,4.06156571 L7.67183765,4.06156571 L4.92982251,6.85355556 C4.79108021,6.97453745 4.7749064,7.18715298 4.89375122,7.32842393 C5.01259604,7.46969488 5.22137747,7.48616347 5.36011977,7.36515264 C5.37305314,7.35386486 5.38513375,7.34159301 5.39619106,7.32842393 L8.70383476,3.96049664 C8.83205982,3.82918209 8.83205982,3.61702964 8.70380633,3.48565721 Z" id="Shape" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
